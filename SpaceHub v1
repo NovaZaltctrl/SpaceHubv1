@@ -1,3 +1,5 @@
+--// GUI2LUA V1 \\--
+--// Counted 141 objects
 
 local ScreenGui = Instance.new('ScreenGui')
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -317,7 +319,7 @@ pcall(function()
 		Core.Size = Vector3.new(0.05, 0.05, 0.05)
 	
 		spawn(function()
-			Core.Parent = workspace
+			Core.Parent = CoreUI
 			local Weld = Instance.new("Weld", Core)
 			Weld.Part0 = Core
 			Weld.Part1 = localplayer.Character.LowerTorso
